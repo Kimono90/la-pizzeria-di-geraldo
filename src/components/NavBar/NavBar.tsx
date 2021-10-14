@@ -7,6 +7,7 @@ export default function NavBar(): ReactElement {
         <Link className="navbar__link" to="/">Home</Link>
         <div>
             <Link className="navbar__link" to="/about">About</Link>
+            <Link className="navbar__link" to="/about">Menu</Link>
             <Link className="navbar__link" to="/users">Reservations</Link>
         </div>
     </nav>
