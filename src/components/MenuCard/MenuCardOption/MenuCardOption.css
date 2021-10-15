@@ -1,0 +1,32 @@
+.menu_card__option {
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+
+.menu_card__option-unselected::after {
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    transform: scale(0);
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+    transition: transform 300ms ease-in-out;
+    transform-origin: center;
+}
+
+.menu_card__option-unselected:hover:after {
+    transform: scale(1);
+}
+
+.menu_card__option-selected:after {
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+}

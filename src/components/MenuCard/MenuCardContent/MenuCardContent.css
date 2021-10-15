@@ -1,0 +1,35 @@
+.menu_card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 90%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.menu_card__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.menu_card__item__name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    white-space: nowrap;
+}
+
+.menu_card__item__border {
+    position: relative;
+    bottom: 6px;
+    border-bottom: 3px dotted white;
+    width: 100%;
+    margin: 0 6px;
+}
+
+.menu_card__item__description {
+    font-weight: 400;
+}
