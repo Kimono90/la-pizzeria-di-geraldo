@@ -6,7 +6,8 @@
 
 .navbar__link {
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   padding: 1rem;

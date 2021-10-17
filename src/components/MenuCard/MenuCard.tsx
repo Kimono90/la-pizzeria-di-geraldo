@@ -6,7 +6,7 @@ import {MenuCardContent} from "./MenuCardContent/MenuCardContent";
 
 
 export function MenuCard(): ReactElement {
-    const [selectedOption, setSelectedOption] = useState<MenuOption>();
+    const [selectedOption, setSelectedOption] = useState<MenuOption>(MenuOption.Dinner);
 
     return <div className="menu_card">
         <div className="menu_card__options_bar">
@@ -26,6 +26,6 @@ export function MenuCard(): ReactElement {
                 isSelected={selectedOption === MenuOption.Desserts}
             />
         </div>
-        <MenuCardContent/>
+        <MenuCardContent menuOption={selectedOption}/>
     </div>
 }

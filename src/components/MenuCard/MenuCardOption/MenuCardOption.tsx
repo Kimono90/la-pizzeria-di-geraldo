@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { MenuOption } from "../../enums/MenuOption";
 import './MenuCardOption.css';
+
 
 type MenuCardOptionProps = {
     option: MenuOption;
@@ -8,7 +9,10 @@ type MenuCardOptionProps = {
     onOptionClick: (option: MenuOption) => void;
 }
 
+
 export function MenuCardOption({ option, isSelected, onOptionClick }: MenuCardOptionProps) {
+
+
     function getClassName() {
         return isSelected
             ? "menu_card__option menu_card__option-selected"
