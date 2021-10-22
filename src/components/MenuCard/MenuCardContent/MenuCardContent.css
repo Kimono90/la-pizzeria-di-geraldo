@@ -5,6 +5,7 @@
     width: 90%;
     background-color: black;
     border-radius: 5px;
+    min-height: 25rem;
 }
 
 .menu_card__item {
@@ -12,6 +13,8 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 2rem;
+    animation: slide-in-menu 300ms ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .menu_card__item__name {
@@ -32,4 +35,21 @@
 
 .menu_card__item__description {
     font-weight: 400;
+}
+
+
+@keyframes slide-in-menu {
+    0% {
+        transform: translateY(50%);
+    }
+
+    70% {
+        transform: translateY(-2px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

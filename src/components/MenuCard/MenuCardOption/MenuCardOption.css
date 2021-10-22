@@ -3,7 +3,6 @@
     font-size: 1.25rem;
 }
 
-
 .menu_card__option-unselected::after {
     display: block;
     position: relative;

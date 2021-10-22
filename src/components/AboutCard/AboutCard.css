@@ -1,5 +1,5 @@
 .about_card {
-    padding: 2rem;
+    padding: 0.5rem;
     margin: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -12,4 +12,23 @@
 
 .about_card h1 {
     margin: 0 0 1rem 0;
+    animation: slide-in-about-card 300ms ease-in-out;
+}
+
+.about_card p {
+    animation: slide-in-about-card 550ms ease-in-out;
+}
+
+@keyframes slide-in-about-card {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    70% {
+        transform: translateY(7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

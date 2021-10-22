@@ -13,7 +13,7 @@ type MenuCardContentProps = {
 }
 
 export function MenuCardContent({ menuOption }: MenuCardContentProps) {
-    const [prismicData, setPrismicData] = useState<PrismicDocument[] | null>(null)
+    const [prismicData, setPrismicData] = useState<PrismicDocument[] | null>(null);
     const client = Prismic.client(apiEndpoint, { accessToken })
 
 
@@ -34,9 +34,11 @@ export function MenuCardContent({ menuOption }: MenuCardContentProps) {
         const menuItemsToRender = prismicData.filter((item) => item.data.item_type === menuOption);
         if (!menuItemsToRender.length) return null;
 
-        return menuItemsToRender.map((item) => {
+        return menuItemsToRender.map((item, index) => {
             return (
-                <div className="menu_card__item">
+                <div className="menu_card__item" key={`${item.id}`} style={{
+                    animationDelay: `${(index * 100)}ms`, opacity: 0
+                }}>
                 <div className="menu_card__item__name">
                     <span>{item.data.menu_item_name[0].text}</span>
                     <span className="menu_card__item__border">&nbsp;</span>
