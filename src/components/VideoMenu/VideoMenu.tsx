@@ -12,10 +12,24 @@ export function VideoMenu(): ReactElement {
 
             </video>
             <div className="buttons-container">
-                <button className="video-button"
-                        onClick={() => document.querySelector(".menu_card")?.scrollIntoView({behavior: "smooth"})}
-                >Menu</button>
-                <button className="video-button">Make a reservation</button>
+                <button
+                    className="video-button"
+                    onClick={() => document.querySelector(".menu_card")?.scrollIntoView({
+                        behavior: "smooth",
+                        block: 'center'
+                    })}
+                >
+                    Menu
+                </button>
+                <button
+                    className="video-button"
+                    onClick={() => document.querySelector('.reservations_section')?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    })}
+                >
+                    Make a reservation
+                </button>
             </div>
         </div>
     )
