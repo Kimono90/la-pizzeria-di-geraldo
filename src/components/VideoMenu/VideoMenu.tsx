@@ -1,7 +1,7 @@
 import React, {ReactElement} from "react";
-import './BackgroundVideo.css';
+import './VideoMenu.css';
 
-export function BackgroundVideo(): ReactElement {
+export function VideoMenu(): ReactElement {
     return (
         <div className="video-container">
             <video autoPlay={true} muted={true} loop={true} width='100%' height='100%' className="video">
