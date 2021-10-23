@@ -3,4 +3,64 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.reservations_section h1 {
+    border-bottom: white solid 3px
+}
+
+.reservations_content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reservations_address {
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.reservations_address a {
+    text-decoration: none;
+    color: white;
+}
+
+.reservations_opening_hours {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.reservations_day {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservations_day span {
+    white-space: nowrap;
+}
+
+.reservations_day span:first-child {
+    padding: 0 1rem 0 0;
+    min-width: 10rem;
+}
+
+.reservations_day span:last-child {
+    min-width: 7rem;
+}
+
+
+@media (max-width: 500px) {
+    .reservations_content {
+        flex-direction: column;
+        width: 95%;
+    }
 }
