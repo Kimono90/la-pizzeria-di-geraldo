@@ -11,7 +11,7 @@ type MenuCardOptionProps = {
 
 
 export function MenuCardOption({ option, isSelected, onOptionClick }: MenuCardOptionProps) {
-    document.querySelector('.menu_card__content')?.scrollIntoView({behavior: 'smooth', block: 'center'});
+    document.querySelector('.menu_card')?.scrollIntoView({behavior: 'smooth', block: 'start'});
     function getClassName() {
         return isSelected
             ? "menu_card__option menu_card__option-selected"

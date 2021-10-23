@@ -16,7 +16,7 @@ export function VideoMenu(): ReactElement {
                     className="video-button"
                     onClick={() => document.querySelector(".menu_card")?.scrollIntoView({
                         behavior: "smooth",
-                        block: 'center'
+                        block: 'start'
                     })}
                 >
                     Menu
@@ -25,7 +25,7 @@ export function VideoMenu(): ReactElement {
                     className="video-button"
                     onClick={() => document.querySelector('.reservations_section')?.scrollIntoView({
                         behavior: 'smooth',
-                        block: 'center'
+                        block: 'start'
                     })}
                 >
                     Make a reservation

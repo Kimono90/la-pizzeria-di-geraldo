@@ -3,7 +3,7 @@
     margin: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    width: 60%;
+    width: 90%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -17,6 +17,21 @@
 
 .about_card p {
     animation: slide-in-about-card 550ms ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .about_card {
+        margin: 0.5rem;
+    }
+
+    .about_card h1 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .about_card p {
+        display: none;
+    }
 }
 
 @keyframes slide-in-about-card {

@@ -27,6 +27,12 @@
     align-items: center;
 }
 
+@media(max-width: 500px) {
+    .buttons-container {
+        flex-direction: column;
+    }
+}
+
 .video-button {
     background: rgba(0,0,0, 0.5);
     padding: 1.5rem;

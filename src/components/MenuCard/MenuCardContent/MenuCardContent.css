@@ -37,6 +37,16 @@
     font-weight: 400;
 }
 
+@media (max-width: 500px) {
+    .menu_card__content {
+        padding: 1rem;
+    }
+    .menu_card__item__name,
+    .menu_card__item__description {
+        font-size: 0.80rem;
+    }
+}
+
 
 @keyframes slide-in-menu {
     0% {

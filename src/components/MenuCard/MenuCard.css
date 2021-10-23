@@ -9,6 +9,12 @@
     flex-direction: column;
 }
 
+@media (max-width: 500px) {
+    .menu_card {
+        width: 90%;
+    }
+}
+
 .menu_card__options_bar {
     display: flex;
     justify-content: space-evenly;
